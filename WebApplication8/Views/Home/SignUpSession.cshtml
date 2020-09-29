@@ -1,0 +1,21 @@
+﻿@model WebApplication8.Models.SignUpSessionViewModel
+
+<h3>Бронирование фильма:</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(x => x.FilmName)
+    @Html.EditorFor(x => x.FilmName)
+
+    <br />
+
+    @Html.LabelFor(x => x.FilmTime)
+    @Html.EditorFor(x => x.FilmTime)
+
+    <br />
+
+    @Html.LabelFor(x => x.Customer)
+    @Html.EditorFor(x => x.Customer)
+
+    <input type="submit" value="Забронировать"/>
+}

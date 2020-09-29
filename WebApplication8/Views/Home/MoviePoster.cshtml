@@ -1,0 +1,9 @@
+﻿@model IEnumerable<WebApplication8.Models.Session>
+
+<h3>Киноафиша:</h3>
+
+@foreach (var item in Model)
+{
+    <p>Название: @item.FilmName Дата показа: @item.SessionDateTime</p>
+    <br />
+}
